@@ -7,6 +7,12 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      }
+    ],
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
