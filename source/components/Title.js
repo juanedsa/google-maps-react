@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 
-
-
-
-
-class Places extends Component {
+class Title extends Component {
   render() {
     return (
       <div>
-places
+        Ruta entre dos Puntos
       </div>
     );
   }
 }
 
-export default Places
+export default Title
