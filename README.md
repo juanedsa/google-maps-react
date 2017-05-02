@@ -17,6 +17,14 @@ npm install
 npm start
 ```
 
+ir a un navegador a la siguiente dirección:
+
+```sh
+http://localhost:8080/webpack-dev-server/
+```
+
+
+
 
 ### Ejemplo
 
