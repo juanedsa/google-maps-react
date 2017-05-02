@@ -7,7 +7,9 @@ import {
   withGoogleMap
 } from 'react-google-maps'
 import SearchBox from "react-google-maps/lib/places/SearchBox"
-import { INPUT_STYLE } from '../constants.js'
+import { INPUT_STYLE } from './Constants.js'
+
+import Results from './Results'
 
 class Map extends Component {
 
@@ -100,6 +102,8 @@ class Map extends Component {
             inputPlaceholder="Ingresa el Destino"
             inputStyle={INPUT_STYLE}
           />
+
+          {props.directions && <Results directions={props.directions} />}
 
         </GoogleMap>
       ));

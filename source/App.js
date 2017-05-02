@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-import Map from './components/Map'
-import Places from './components/Places'
-import Title from './components/Title'
+import Map from './components/Map/Map'
+import Instructions from './components/Instructions/Instructions'
+import Title from './components/Title/Title'
+
+require('./App.css');
 
 class App extends Component {
   render() {
@@ -14,13 +16,11 @@ class App extends Component {
     }
 
     return (
-
-        <div style={{ margin: `0 auto`, height: `600px` , width: `800px` }}>
+        <div className="map-container">
           <Title />
+          <Instructions />
           <Map center={centerMap} />
-          <Places />
         </div>
-
     );
   }
 }

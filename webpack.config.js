@@ -7,12 +7,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      }
-    ],
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
@@ -20,6 +14,6 @@ module.exports = {
       query: {
         presets: ['es2015','react']
       }
-    }]
+    },{ test: /\.css$/, loader: "style-loader!css-loader" }]
   }
 };
